@@ -1,9 +1,9 @@
 # My_Project_PNG
 
-## 🌐 Socials:
+## 💡Action Menu Project:
 ![Description of the image](My_AHK_Project_Snaps/Action_Menu.png)
 
-## 🌐 Socials:
+## 💡ONE GUI Project:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png)
 
 ## 🌐 Socials:
