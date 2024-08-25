@@ -1,5 +1,9 @@
 # My_Project_PNG
 
+[arbitrary case-insensitive reference text]: https://www.mozilla.org
+[1]: http://slashdot.org
+[link text itself]: http://www.reddit.com
+
 ## 💡ONE GUI Tab-1:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
 
