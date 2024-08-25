@@ -9,27 +9,27 @@
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI_Templates_Manager.png "ONE_GUI_Templates_Manager")
 
 
+# AHK Volume Control and Window Management
+
 <details>
-  <summary>Markdown</summary>
-    
-    ```ahk
-    ; ===== Volume Control =====
+<summary>Click to expand/collapse the code</summary>
+
+```autohotkey
+; ===== Volume Control =====
 #HotIf MouseIsOver("ahk_class Shell_TrayWnd")
 WheelUp::Send("{Volume_Up}")
 WheelDown::Send("{Volume_Down}")
 RButton::Send("{RButton}")
-
 #HotIf WinActive("ahk_class CabinetWClass")
 RButton::Send("{Shift Down}{RButton}{Shift Up}")
 #HotIf
-
 RAlt::AppsKey
-
 MouseIsOver(WinTitle) {
     MouseGetPos(&x, &y, &win)
     return WinExist(WinTitle " ahk_id " win)
 }
-    ```
+```
+
 </details>
 
 <br>
