@@ -503,11 +503,9 @@ ClipSave(){
 #HotIf WinActive("ahk_exe EXCEL.EXE")
 RCtrl::RButton
 ```
-
 </details>
 
 <br>
-
 ## Any Selected Window Resizer GUI:
 ![Description of the image](My_AHK_Project_Snaps/Window_Resizer_GUI.png "Window_Resizer_GUI")
 
