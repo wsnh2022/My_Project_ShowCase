@@ -1,5 +1,7 @@
 # My_Project_PNG
 
+[The-Ultimate-Markdown-Cheat-Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)
+
 ## 💡ONE GUI Tab-1:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
 
@@ -9,9 +11,6 @@
 ```ahk
 console.log('Error');
 ```
-
-var s = "JavaScript syntax highlighting";
-alert(s);
 
 <br>
 
