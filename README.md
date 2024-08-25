@@ -4,9 +4,7 @@
 
 <img src="https://img.shields.io/badge/theultimatemarkdowncheatsheet-brightgreen.svg" />
 
-![alt text][image]
-
-[image]: https://imgur.com/tjPOPhB&auto=format&fit=crop&w=100&q=80 "Title text"
+[ahk](https://i.imgur.com/tjPOPhB.png)
 
 ## 💡ONE GUI Tab-1:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
