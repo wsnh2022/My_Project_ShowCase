@@ -30,17 +30,14 @@ MyheaderFontsize := "s12", MyFontsize := "s10", MyFont := "Calibri" ; "Bahnschri
 bc := "0a0a0a", Hfc := "ff0909", Fc := "9375ff"  ; Blue-Red Theme
 
 ; GUI creation
-/** @var {GuiExt} MyGui */
-MyGui := Gui()
+MyGui := GuiExt()
 ; MyGui.Opt("+AlwaysOnTop")
 MyGui.Title := "OneGui"
 MyGui.BackColor := bc
-/* To set Rounded Corners for window. */
-MyGui.SetWindowAttribute(33, 2)
+MyGui.SetWindowAttribute(33, 2) ;;To set Rounded Corners for window.
 MyGui.SetDarkTitle()
 MyGui.SetDarkMenu()
 MyGui.SetWindowColor(, MyGui.BackColor, MyGui.BackColor)
-/* This example sets dark mode edit control.*/
 MyGui.SetFont("s9 ca888ff", MyheaderFontsize)
 
 ; Create TabView
