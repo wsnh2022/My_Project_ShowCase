@@ -1,7 +1,7 @@
 # My_Project_PNG
 
 ## 💡ONE GUI Tab-1:
-![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "Logo Title Text 1")
+![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
 
 ## ONE GUI Templates Manager Tab-2 :
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI_Templates_Manager.png)
