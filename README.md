@@ -11,3 +11,6 @@
 
 ## 💡Action Menu:
 ![Description of the image](My_AHK_Project_Snaps/Action_Menu.png)
+
+## 💡Password Generater:
+![image](https://github.com/user-attachments/assets/1397ad57-7dcc-4651-a36c-1aa3671f967c)
