@@ -17,7 +17,7 @@ MyGui := GuiExt()
 ; MyGui.Opt("+AlwaysOnTop")
 MyGui.Title := "OneGui"
 MyGui.BackColor := bc
-/* To set Rounded Corners for window. */
+; To set Rounded Corners for window.
 MyGui.SetWindowAttribute(33, 2)
 MyGui.SetDarkTitle()
 MyGui.SetDarkMenu()
