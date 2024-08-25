@@ -10,7 +10,8 @@
 console.log('Error');
 ```
 
-</strike>
+var s = "JavaScript syntax highlighting";
+alert(s);
 
 <br>
 
