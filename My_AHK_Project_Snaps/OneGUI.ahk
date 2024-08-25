@@ -14,15 +14,15 @@ bc := "0a0a0a", Hfc := "ff0909", Fc := "9375ff"  ; Blue-Red Theme
 
 ; GUI creation
 MyGui := GuiExt()
-; MyGui.Opt("+AlwaysOnTop")
+;; MyGui.Opt("+AlwaysOnTop")
 MyGui.Title := "OneGui"
 MyGui.BackColor := bc
-; To set Rounded Corners for window.
+;; To set Rounded Corners for window.
 MyGui.SetWindowAttribute(33, 2)
 MyGui.SetDarkTitle()
 MyGui.SetDarkMenu()
 MyGui.SetWindowColor(, MyGui.BackColor, MyGui.BackColor)
-/* This example sets dark mode edit control.*/
+;; This example sets dark mode edit control.*/
 MyGui.SetFont("s9 ca888ff", MyheaderFontsize)
 
 ; Create TabView
