@@ -6,7 +6,7 @@
 
 ![alt text][image]
 
-[image]: https://imgur.com/tjPOPhB "Title text"
+[image]: https://imgur.com/tjPOPhB&auto=format&fit=crop&w=100&q=80 "Title text"
 
 ## 💡ONE GUI Tab-1:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
