@@ -6,6 +6,12 @@
 ## ONE GUI Templates Manager Tab-2 :
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI_Templates_Manager.png "ONE_GUI_Templates_Manager")
 
+```ahk
+console.log('Error');
+```
+
+</strike>
+
 <br>
 
 ## Any Selected Window Resizer GUI:
