@@ -15,7 +15,6 @@ TraySetIcon "hexlock.ico"
 #Include C:\Users\The_Thinker\Documents\AutoHotkey_V2\V2Functions.ahk
 #Include C:\Users\The_Thinker\Documents\AutoHotkey_V2\lib\GuiEnhancerKit.ahk
 #Include C:\Users\The_Thinker\Documents\AutoHotkey_V2\lib\ColorButton.ahk
-
 ; Hotkeys
 ~!Space::Reload()
 
@@ -499,6 +498,7 @@ ClipSave(){
 
 #HotIf WinActive("ahk_exe EXCEL.EXE")
 RCtrl::RButton
+
 ```
 
 <br>
