@@ -2,10 +2,10 @@
 
 [The-Ultimate-Markdown-Cheat-Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)
 
-## 💡ONE GUI Main Tab-1:
+## 💡ONE GUI Tab-1: Main
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
 
-## ONE GUI Templates Manager Tab-2 :
+## ONE GUI Tab-2 : Templates Manager
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI_Templates_Manager.png "ONE_GUI_Templates_Manager")
 
 
