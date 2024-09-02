@@ -2,7 +2,7 @@
 
 [The-Ultimate-Markdown-Cheat-Sheet](https://github.com/lifeparticle/Markdown-Cheatsheet)
 
-## 💡ONE GUI Tab-1:
+## 💡ONE GUI Main Tab-1:
 ![Description of the image](My_AHK_Project_Snaps/ONE_GUI.png "ONE_GUI.png")
 
 ## ONE GUI Templates Manager Tab-2 :
