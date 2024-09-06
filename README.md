@@ -1440,11 +1440,12 @@ FlushMenuThemes() {
 ## 💡Password Generater:
 ![image](My_AHK_Project_Snaps/Password_Generator.png "Password_Generator")
 
+<details>
+<summary>Click to expand/collapse the code</summary>
 
-[code sample You can use numbers for reference-style link definitions][1]
+```AutoHotkey
+toggle source code ## ------- SOURCE CODE HERE
+```
+</details>
 
-Or leave it empty and use the [link text itself].
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+<br>
