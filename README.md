@@ -504,11 +504,165 @@ ClipSave(){
 RCtrl::RButton
 ```
 </details>
-
 <br>
 
 ## Any Selected Window Resizer GUI:
 ![Description of the image](My_AHK_Project_Snaps/Window_Resizer_GUI.png "Window_Resizer_GUI")
+
+
+<details>
+<summary>Click to expand/collapse the code</summary>
+
+```AutoHotkey
+;;; =========== Window Managment ===========================
+class WMove {
+    static screenWidth := 2560
+    static screenHeight := 1440
+    static sectionWidth := WMove.screenWidth // 4
+    static sectionHeight := WMove.screenHeight // 2
+    static halfWidth := WMove.screenWidth // 2
+    static halfHeight := WMove.screenHeight // 2
+
+    static Move(x, y, width, height, winTitle := "A") {
+        WinMinimize(winTitle)
+        WinMove(x, y, width, height, winTitle)
+        WinRestore(winTitle)
+        WinActivate(winTitle)
+        if WinExist("WMove Window Manager") {
+            WinActivate()
+        }
+    }
+
+    ; 4x2 grid functions
+    static Q1() {
+        WMove.Move(0, 0, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q2() {
+        WMove.Move(WMove.sectionWidth, 0, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q3() {
+        WMove.Move(WMove.sectionWidth * 2, 0, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q4() {
+        WMove.Move(WMove.sectionWidth * 3, 0, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q5() {
+        WMove.Move(0, WMove.sectionHeight, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q6() {
+        WMove.Move(WMove.sectionWidth, WMove.sectionHeight, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q7() {
+        WMove.Move(WMove.sectionWidth * 2, WMove.sectionHeight, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    static Q8() {
+        WMove.Move(WMove.sectionWidth * 3, WMove.sectionHeight, WMove.sectionWidth, WMove.sectionHeight)
+    }
+
+    ; 2x2 grid functions
+    static H1() {
+        WMove.Move(0, 0, WMove.halfWidth, WMove.halfHeight)
+    }
+
+    static H2() {
+        WMove.Move(WMove.halfWidth, 0, WMove.halfWidth, WMove.halfHeight)
+    }
+
+    static H3() {
+        WMove.Move(0, WMove.halfHeight, WMove.halfWidth, WMove.halfHeight)
+    }
+
+    static H4() {
+        WMove.Move(WMove.halfWidth, WMove.halfHeight, WMove.halfWidth, WMove.halfHeight)
+    }
+
+    ; Center function
+    static Center() {
+        WinMinimize("WMove Window Manager")
+        winTitle := WinGetTitle("A")
+        WinActivate(winTitle)
+        WinGetPos(&x, &y, &width, &height, winTitle)
+        newX := (A_ScreenWidth / 2) - (width / 2)
+        newY := (A_ScreenHeight / 2) - (height / 2)
+        
+        WinMove(newX, newY, , , winTitle)
+        WinActivate(winTitle)
+        if WinExist("WMove Window Manager") {
+            WinActivate()
+        }
+    }
+
+    ; Function to show GUI
+    static ShowGUI() {
+        if WinExist("WMove Window Manager") {
+            WinShow()
+            WinActivate()
+        } else {
+            WMoveGUI.Show()
+        }
+    }
+}
+
+class WMoveGUI {
+    static guiObj := {}
+    
+    static Show() {
+        if (this.guiObj.HasProp("Hwnd")) {
+            this.guiObj.Show()
+            return
+        }
+
+        this.guiObj := Gui()
+        this.guiObj.Title := "Window Resizer GUI"
+        this.guiObj.Opt("+AlwaysOnTop -Sysmenu")
+        this.guiObj.BackColor := "0x000000"  ; Dark background
+
+        ; 4x2 Grid
+        this.guiObj.Add("Text", "x10 y10 w220 c0xff0909", "4x2 Grid")
+        this.AddButton("Q1", 10, 30, 50, 30)
+        this.AddButton("Q2", 65, 30, 50, 30)
+        this.AddButton("Q3", 120, 30, 50, 30)
+        this.AddButton("Q4", 175, 30, 50, 30)
+        this.AddButton("Q5", 10, 65, 50, 30)
+        this.AddButton("Q6", 65, 65, 50, 30)
+        this.AddButton("Q7", 120, 65, 50, 30)
+        this.AddButton("Q8", 175, 65, 50, 30)
+        
+        ; 2x2 Grid
+        this.guiObj.Add("Text", "x10 y110 w220 c0xff0909", "2x2 Grid")
+        this.AddButton("H1", 10, 135, 105, 30)
+        this.AddButton("H2", 120, 135, 105, 30)
+        this.AddButton("H3", 10, 170, 105, 30)
+        this.AddButton("H4", 120, 170, 105, 30)
+        
+        ; Center Button
+        this.AddButton("CENTER", 10, 230, 215, 30)
+        
+        this.guiObj.Show("w235")
+    }
+    
+    static AddButton(name, x, y, w, h) {
+        btn := this.guiObj.Add("Button", Format("x{} y{} w{} h{}", x, y, w, h), name)
+        btn.OnEvent("Click", (*) => WMove.%name%())
+        this.SetButtonColors(btn)
+    }
+
+    static SetButtonColors(btn) {
+        btn.Opt("+Background333333 +c0xFFFFFF")  ; Dark gray background, white text
+    }
+}
+```
+</details>
+
+<br>
+
 
 ## 💡Action Menu:
 ![Description of the image](My_AHK_Project_Snaps/Action_Menu.png "Action_Menu")
