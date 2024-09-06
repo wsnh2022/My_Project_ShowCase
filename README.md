@@ -667,6 +667,8 @@ class WMoveGUI {
 ## 💡Action Menu:
 ![Description of the image](My_AHK_Project_Snaps/Action_Menu.png "Action_Menu")
 
+## 💡Password Generater:
+![image](My_AHK_Project_Snaps/Password_Generator.png "Password_Generator")
 
 <details>
 <summary>Click to expand/collapse the code</summary>
@@ -1431,20 +1433,6 @@ FlushMenuThemes() {
 }
 
 
-```
-</details>
-
-<br>
-
-
-## 💡Password Generater:
-![image](My_AHK_Project_Snaps/Password_Generator.png "Password_Generator")
-
-<details>
-<summary>Click to expand/collapse the code</summary>
-
-```AutoHotkey
-toggle source code ## ------- SOURCE CODE HERE
 ```
 </details>
 
